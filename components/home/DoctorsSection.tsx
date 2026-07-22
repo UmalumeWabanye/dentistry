@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { Star, ArrowRight, Calendar, Languages } from "lucide-react";
+import { ArrowRight, Calendar, Languages } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { doctors } from "@/data/doctors";
@@ -15,57 +14,39 @@ export function DoctorsSection() {
       <div className="container-custom">
         <SectionHeading
           eyebrow="Our Expert Team"
-          title="Meet Your"
-          highlight="Dental Experts"
+          title="Meet Our Team"
           description="Our experienced, compassionate team is dedicated to providing you with the highest standard of care."
-          align="center"
-          className="mb-16"
+          align="left"
+          className="mb-12"
         />
 
-        <div className="space-y-14 lg:space-y-18">
+        <div className="space-y-10">
           {doctors.map((doctor, index) => (
-            <motion.article
+            <article
               key={doctor.id}
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.5, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
               className={cn(
-                "grid gap-0 overflow-hidden rounded-[2rem] bg-[--color-surface] border border-[--color-border] shadow-[var(--shadow-sm)]",
+                "grid gap-0 overflow-hidden rounded-[2rem] border border-[--color-border] bg-[--color-surface]",
                 index % 2 === 0 ? "lg:grid-cols-[0.92fr_1.08fr]" : "lg:grid-cols-[1.08fr_0.92fr]"
               )}
             >
               {/* Image */}
-              <div className="relative aspect-[4/5] overflow-hidden lg:aspect-auto lg:min-h-[34rem]">
+              <div className="relative aspect-[4/5] overflow-hidden lg:aspect-auto lg:min-h-[30rem]">
                 <Image
                   src={doctor.image}
                   alt={`${doctor.name}, ${doctor.title} at Edross Dental`}
                   fill
-                  className="object-cover object-top transition-transform duration-700"
+                  className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02)_0%,rgba(0,0,0,0.2)_100%)]" aria-hidden="true" />
-
-                {/* Rating badge */}
-                <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 rounded-full bg-[--color-surface] px-3 py-1.5 shadow-lg">
-                    <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" aria-hidden="true" />
-                    <span className="text-xs font-bold text-[--color-text]">{doctor.rating}</span>
-                    <span className="text-xs text-[--color-text-muted]">({doctor.reviewCount})</span>
-                  </div>
-                  <div className="bg-[--color-surface] text-[--color-primary] rounded-full px-3 py-1.5 text-xs font-bold shadow-lg">
-                    {doctor.experience}+ yrs
-                  </div>
-                </div>
               </div>
 
               {/* Content */}
-              <div className="flex flex-col justify-center p-7 sm:p-9 lg:p-12">
+              <div className="flex flex-col justify-center p-7 sm:p-9 lg:p-10">
                 <p className="editorial-kicker mb-4 text-[--color-primary]">{index === 0 ? "Principal Dentist" : index === 1 ? "Cosmetic and Restorative" : "Family and Preventive"}</p>
                 <h3 className="mb-3 text-4xl leading-[0.95] tracking-[-0.04em] text-[--color-text] sm:text-5xl">
                   {doctor.name}
                 </h3>
-                <p className="mb-6 text-sm font-medium text-[--color-text-muted] sm:text-base">{doctor.title}</p>
+                <p className="mb-5 text-sm font-medium text-[--color-text-muted] sm:text-base">{doctor.title}</p>
 
                 {/* Qualifications */}
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -97,7 +78,7 @@ export function DoctorsSection() {
                 </div>
 
                 {/* Languages */}
-                <div className="mb-7 flex items-center gap-2 text-xs text-[--color-text-muted]">
+                <div className="mb-6 flex items-center gap-2 text-xs text-[--color-text-muted]">
                   <Languages className="h-3.5 w-3.5" aria-hidden="true" />
                   <span>{doctor.languages.join(", ")}</span>
                 </div>
@@ -106,7 +87,7 @@ export function DoctorsSection() {
                   Book with {doctor.name.split(" ")[1]}
                 </Button>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
 
