@@ -102,13 +102,13 @@ export function Navbar() {
                           className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
                           role="menu"
                         >
-                          <div className="bg-[--color-surface] rounded-2xl shadow-2xl border border-[--color-border] p-2 min-w-[220px]">
+                          <div className="rounded-2xl border border-[--color-border] bg-[--color-surface] p-2 min-w-[220px] shadow-2xl backdrop-blur-0">
                             {link.children.map((child) => (
                               <Link
                                 key={child.href}
                                 href={child.href}
                                 role="menuitem"
-                                className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-[--color-text] hover:bg-[--color-surface] hover:text-[--color-primary] transition-colors"
+                                className="flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-[--color-text] transition-colors hover:bg-[--color-surface-2] hover:text-[--color-primary]"
                               >
                                 {child.label}
                               </Link>

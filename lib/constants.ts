@@ -44,7 +44,6 @@ export const CLINIC_INFO = {
 };
 
 export const NAV_LINKS = [
-  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   {
     label: "Services",
@@ -59,9 +58,6 @@ export const NAV_LINKS = [
   },
   { label: "Our Dentists", href: "/doctors" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Patient Resources", href: "/resources" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 
