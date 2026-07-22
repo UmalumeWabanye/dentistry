@@ -20,20 +20,20 @@ export default function TestimonialsPage() {
         style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Patient Stories</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Patient Stories</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             What Our Patients Say
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto">
             Real experiences from real patients. Thousands of South Africans trust Edross Dental.
           </p>
         </div>
       </section>
 
       {/* Stats bar */}
-      <section className="py-10 bg-[--color-surface] border-b border-slate-200">
+      <section className="py-10 bg-[--color-surface] border-b border-[--color-border]">
         <div className="container-custom">
           <dl className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {CLINIC_INFO.stats.map((stat) => (
@@ -75,7 +75,7 @@ export default function TestimonialsPage() {
                 <blockquote className="text-[--color-text-muted] text-sm leading-relaxed flex-1 italic mb-5">
                   &ldquo;{t.review}&rdquo;
                 </blockquote>
-                <div className="flex items-center gap-3 pt-4 border-t border-slate-200">
+                <div className="flex items-center gap-3 pt-4 border-t border-[--color-border]">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0">
                     <Image src={t.avatar} alt={`Photo of ${t.name}`} fill className="object-cover" sizes="40px" />
                   </div>

@@ -50,13 +50,13 @@ export default function ResourcesPage() {
         style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Patient Resources</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Patient Resources</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Helpful Information for Patients
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto">
             Practical guidance to help you prepare, recover, and care for your smile between visits.
           </p>
         </div>

@@ -18,13 +18,13 @@ export default function GalleryPage() {
         style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Before & After</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Before & After</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Smile Gallery
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto">
             Real patient transformations. See the difference expert dental care can make.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function GalleryPage() {
               <span
                 key={cat.id}
                 role="listitem"
-                className="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 text-[--color-text-muted] cursor-default"
+                className="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-[--color-border] text-[--color-text-muted] cursor-default"
               >
                 {cat.label}
               </span>

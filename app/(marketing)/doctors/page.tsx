@@ -20,13 +20,13 @@ export default function DoctorsPage() {
         style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Our Team</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Our Team</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Meet Your Dental Experts
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto leading-relaxed">
             Our experienced, compassionate team is dedicated to providing you with the highest standard of dental care.
           </p>
         </div>

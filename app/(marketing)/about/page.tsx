@@ -24,13 +24,13 @@ export default function AboutPage() {
         style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom relative z-10 text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">About Us</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">About Us</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Our Story & Mission
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto leading-relaxed">
             Founded on a passion for transforming smiles and improving lives through exceptional dental care.
           </p>
         </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 <dt className="text-4xl sm:text-5xl font-bold text-white mb-2">
                   {stat.value.toLocaleString()}{stat.suffix}
                 </dt>
-                <dd className="text-blue-200 text-sm sm:text-base font-medium">{stat.label}</dd>
+                <dd className="text-[--color-on-primary-muted] text-sm sm:text-base font-medium">{stat.label}</dd>
               </div>
             ))}
           </dl>

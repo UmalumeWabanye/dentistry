@@ -74,8 +74,8 @@ export function TestimonialsSection() {
                   </div>
 
                   {/* Quote */}
-                  <Quote className="h-8 w-8 text-[--color-secondary] opacity-60 mb-3" aria-hidden="true" />
-                  <blockquote className="text-blue-100 text-sm leading-relaxed flex-1 italic">
+                  <Quote className="h-8 w-8 text-[--color-on-primary-subtle] opacity-80 mb-3" aria-hidden="true" />
+                  <blockquote className="text-[--color-on-primary-muted] text-sm leading-relaxed flex-1 italic">
                     &ldquo;{testimonial.review}&rdquo;
                   </blockquote>
 
@@ -95,7 +95,7 @@ export function TestimonialsSection() {
                     </div>
                     <div>
                       <p className="text-white font-semibold text-sm">{testimonial.name}</p>
-                      <p className="text-[--color-secondary] text-xs">{testimonial.treatment}</p>
+                      <p className="text-[--color-on-primary-subtle] text-xs">{testimonial.treatment}</p>
                     </div>
                     {testimonial.verified && (
                       <span className="ml-auto text-xs text-emerald-400 font-medium bg-emerald-400/10 rounded-full px-2 py-0.5">
@@ -121,8 +121,8 @@ export function TestimonialsSection() {
               className={cn(
                 "rounded-full transition-all duration-300",
                 index === selectedIndex
-                  ? "w-6 h-2 bg-[--color-secondary]"
-                  : "w-2 h-2 bg-white/30 hover:bg-white/60"
+                  ? "w-6 h-2 bg-[--color-accent]"
+                  : "w-2 h-2 bg-white/30 hover:bg-white/70"
               )}
             />
           ))}

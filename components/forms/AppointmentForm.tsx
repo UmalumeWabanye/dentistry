@@ -76,7 +76,7 @@ const inputBase = (hasIcon: boolean, hasError: boolean) => cn(
   "w-full rounded-xl border bg-white px-4 py-3 text-sm text-[--color-text] placeholder-[--color-text-light]",
   "transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent",
   hasIcon && "pl-10",
-  hasError ? "border-[--color-error]" : "border-slate-200 hover:border-[--color-secondary]"
+  hasError ? "border-[--color-error]" : "border-[--color-border] hover:border-[--color-secondary]"
 );
 
 export function AppointmentForm() {

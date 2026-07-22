@@ -42,7 +42,7 @@ export function Navbar() {
 
   const linkColor = cn(
     "text-sm font-semibold transition-colors duration-200",
-    scrolled || !isHome ? "text-[--color-text] hover:text-[--color-primary]" : "text-white hover:text-[--color-secondary]"
+    scrolled || !isHome ? "text-[--color-text] hover:text-[--color-primary]" : "text-white hover:text-[--color-on-primary-subtle]"
   );
 
   const logoColor = scrolled || !isHome ? "text-[--color-primary]" : "text-white";
@@ -71,7 +71,7 @@ export function Navbar() {
               E
             </div>
             <span className="text-lg font-bold tracking-tight ">
-              Edross <span className={cn(scrolled || !isHome ? "text-[--color-primary]" : "text-[--color-secondary]")}>Dental</span>
+              Edross <span className={cn(scrolled || !isHome ? "text-[--color-primary]" : "text-[--color-on-primary-subtle]")}>Dental</span>
             </span>
           </Link>
 
@@ -125,7 +125,7 @@ export function Navbar() {
                     className={cn(
                       linkColor,
                       "px-3 py-2 rounded-lg",
-                      pathname === link.href && (scrolled || !isHome ? "text-[--color-primary]" : "text-[--color-secondary]")
+                      pathname === link.href && (scrolled || !isHome ? "text-[--color-primary]" : "text-[--color-accent-light]")
                     )}
                     aria-current={pathname === link.href ? "page" : undefined}
                   >

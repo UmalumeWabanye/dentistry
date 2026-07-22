@@ -68,7 +68,7 @@ export function StatCounter({
       <span
         className={cn(
           "text-sm sm:text-base font-medium",
-          light ? "text-blue-100" : "text-[--color-text-muted]"
+          light ? "text-[--color-on-primary-muted]" : "text-[--color-text-muted]"
         )}
       >
         {label}

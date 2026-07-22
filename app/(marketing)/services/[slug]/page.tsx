@@ -71,10 +71,10 @@ export default async function ServicePage({ params }: Props) {
             >
               {service.title}
             </h1>
-            <p className="text-white/80 text-lg max-w-xl leading-relaxed mb-8">{service.shortDescription}</p>
+            <p className="text-[--color-on-primary-muted] text-lg max-w-xl leading-relaxed mb-8">{service.shortDescription}</p>
             <div className="flex flex-wrap gap-4">
               <Button href="/appointments" variant="white" size="lg">Book This Treatment</Button>
-              <div className="flex items-center gap-4 text-white/80 text-sm">
+              <div className="flex items-center gap-4 text-[--color-on-primary-muted] text-sm">
                 <div className="flex items-center gap-1.5">
                   <Clock className="h-4 w-4" aria-hidden="true" />
                   <span>{service.duration}</span>
@@ -158,7 +158,7 @@ export default async function ServicePage({ params }: Props) {
             {/* Sidebar */}
             <aside className="space-y-6">
               {/* Quick info */}
-              <div className="bg-[--color-surface] rounded-3xl p-6 border border-slate-200">
+              <div className="bg-[--color-surface] rounded-3xl p-6 border border-[--color-border]">
                 <h3 className="font-bold text-[--color-text] mb-4">Treatment Overview</h3>
                 <dl className="space-y-3 text-sm">
                   <div className="flex justify-between">
@@ -183,7 +183,7 @@ export default async function ServicePage({ params }: Props) {
                 <h3 className="font-bold text-lg mb-2">
                   Ready to get started?
                 </h3>
-                <p className="text-white/80 text-sm mb-5 leading-relaxed">
+                <p className="text-[--color-on-primary-muted] text-sm mb-5 leading-relaxed">
                   Book a consultation today and we&apos;ll create your personalised treatment plan.
                 </p>
                 <Button href="/appointments" variant="white" size="md" className="w-full justify-center">

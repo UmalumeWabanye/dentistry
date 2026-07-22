@@ -52,7 +52,7 @@ export function SectionHeading({
         <span
           className={cn(
             "inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest",
-            light ? "text-[--color-secondary]" : "text-[--color-primary]"
+            light ? "text-[--color-on-primary-subtle]" : "text-[--color-primary]"
           )}
         >
           <span className="block h-px w-6 bg-current opacity-60" />
@@ -83,7 +83,7 @@ export function SectionHeading({
         <p
           className={cn(
             "text-base sm:text-lg leading-relaxed max-w-2xl",
-            light ? "text-blue-100" : "text-[--color-text-muted]"
+            light ? "text-[--color-on-primary-muted]" : "text-[--color-text-muted]"
           )}
         >
           {description}

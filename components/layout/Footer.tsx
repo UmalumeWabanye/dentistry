@@ -9,7 +9,7 @@ export function Footer() {
   const featuredServices = services.filter((s) => s.featured).slice(0, 5);
 
   return (
-    <footer className="bg-[--color-text] text-slate-300" role="contentinfo">
+    <footer className="bg-[--color-primary-dark] text-[--color-on-primary-muted]" role="contentinfo">
       {/* Emergency Banner */}
       <div className="bg-[--color-error] text-white py-3">
         <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-2 text-sm font-medium">
@@ -37,7 +37,7 @@ export function Footer() {
                 E
               </div>
               <span className="text-xl font-bold text-white ">
-                Edross <span className="text-[--color-secondary]">Dental</span>
+                Edross <span className="text-[--color-on-primary-subtle]">Dental</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed mb-6">
@@ -56,7 +56,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-white/10 hover:bg-[--color-primary] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 text-xs font-bold text-slate-300"
+                  className="w-9 h-9 rounded-lg bg-white/10 hover:bg-[--color-primary] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 text-xs font-bold text-[--color-on-primary-muted]"
                 >
                   {initial}
                 </a>
@@ -72,14 +72,14 @@ export function Footer() {
                 <li key={service.id}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-sm hover:text-[--color-secondary] transition-colors hover:translate-x-0.5 inline-block"
+                    className="text-sm hover:text-white transition-colors hover:translate-x-0.5 inline-block"
                   >
                     {service.title}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/services" className="text-sm text-[--color-secondary] hover:text-[--color-secondary-light] font-medium transition-colors">
+                <Link href="/services" className="text-sm text-white hover:text-[--color-on-primary-subtle] font-medium transition-colors">
                   View All Services →
                 </Link>
               </li>
@@ -100,7 +100,7 @@ export function Footer() {
                 { label: "Contact", href: "/contact" },
               ].map(({ label, href }) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm hover:text-[--color-secondary] transition-colors hover:translate-x-0.5 inline-block">
+                  <Link href={href} className="text-sm hover:text-white transition-colors hover:translate-x-0.5 inline-block">
                     {label}
                   </Link>
                 </li>
@@ -113,23 +113,23 @@ export function Footer() {
             <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Contact Us</h3>
             <ul className="space-y-3.5 text-sm mb-6">
               <li className="flex items-start gap-2.5">
-                <MapPin className="h-4 w-4 mt-0.5 text-[--color-secondary] shrink-0" aria-hidden="true" />
+                <MapPin className="h-4 w-4 mt-0.5 text-[--color-on-primary-subtle] shrink-0" aria-hidden="true" />
                 <address className="not-italic leading-snug">{CLINIC_INFO.address.full}</address>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="h-4 w-4 text-[--color-secondary] shrink-0" aria-hidden="true" />
-                <a href={`tel:${CLINIC_INFO.contact.phonePlain}`} className="hover:text-[--color-secondary] transition-colors">
+                <Phone className="h-4 w-4 text-[--color-on-primary-subtle] shrink-0" aria-hidden="true" />
+                <a href={`tel:${CLINIC_INFO.contact.phonePlain}`} className="hover:text-white transition-colors">
                   {CLINIC_INFO.contact.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail className="h-4 w-4 text-[--color-secondary] shrink-0" aria-hidden="true" />
-                <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-[--color-secondary] transition-colors">
+                <Mail className="h-4 w-4 text-[--color-on-primary-subtle] shrink-0" aria-hidden="true" />
+                <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-white transition-colors">
                   {CLINIC_INFO.contact.email}
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
-                <Clock className="h-4 w-4 mt-0.5 text-[--color-secondary] shrink-0" aria-hidden="true" />
+                <Clock className="h-4 w-4 mt-0.5 text-[--color-on-primary-subtle] shrink-0" aria-hidden="true" />
                 <div className="space-y-0.5">
                   <p>Mon–Fri: 08:00 – 17:00</p>
                   <p>Saturday: 08:00 – 13:00</p>
@@ -144,7 +144,7 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[--color-on-primary-subtle]">
           <p>
             © {currentYear} {CLINIC_INFO.name}. All rights reserved.
           </p>
@@ -152,8 +152,8 @@ export function Footer() {
             Built with <Heart className="h-3 w-3 text-red-400 fill-red-400" aria-hidden="true" /> for better dental health
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-slate-300 transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-[--color-on-primary-muted] transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-[--color-on-primary-muted] transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

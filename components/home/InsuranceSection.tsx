@@ -38,7 +38,7 @@ export function InsuranceSection() {
             {doubled.map((provider, i) => (
               <div
                 key={`${provider}-${i}`}
-                className="flex items-center justify-center h-14 px-6 rounded-xl bg-[--color-surface] border border-slate-200 whitespace-nowrap text-sm font-semibold text-[--color-text-muted] hover:text-[--color-primary] hover:border-[--color-secondary]/40 transition-colors shrink-0"
+                className="flex items-center justify-center h-14 px-6 rounded-xl bg-[--color-surface] border border-[--color-border] whitespace-nowrap text-sm font-semibold text-[--color-text-muted] hover:text-[--color-primary] hover:border-[--color-secondary]/40 transition-colors shrink-0"
               >
                 {provider}
               </div>

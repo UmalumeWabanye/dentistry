@@ -46,7 +46,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white border border-white/20"
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-[--color-on-primary-muted] border border-white/20"
             >
               <span className="w-2 h-2 rounded-full bg-[--color-accent] animate-pulse" aria-hidden="true" />
               <span className="text-sm font-semibold">Premium Dental Care in South Africa</span>
@@ -63,7 +63,7 @@ export function HeroSection() {
               <span
                 className="relative inline-block"
                 style={{
-                  color: "#dff0ff",
+                  color: "var(--color-on-primary-muted)",
                 }}
               >
                 Healthiest
@@ -77,7 +77,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-lg sm:text-xl text-blue-100 max-w-lg leading-relaxed"
+              className="text-lg sm:text-xl text-[--color-on-primary-muted] max-w-lg leading-relaxed"
             >
               Compassionate, expert dental care for the whole family. From routine check-ups to full smile transformations — we make every visit exceptional.
             </motion.p>
@@ -95,7 +95,7 @@ export function HeroSection() {
                 "All major medical aids accepted",
                 "State-of-the-art technology & modern facilities",
               ].map((item) => (
-                <li key={item} className="flex items-center gap-2.5 text-blue-100 text-sm sm:text-base">
+                <li key={item} className="flex items-center gap-2.5 text-[--color-on-primary-muted] text-sm sm:text-base">
                   <CheckCircle2 className="h-5 w-5 text-[--color-accent] shrink-0" aria-hidden="true" />
                   {item}
                 </li>
@@ -232,7 +232,7 @@ export function HeroSection() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         aria-hidden="true"
       >
-        <span className="text-white/50 text-xs font-medium">Scroll to explore</span>
+        <span className="text-[--color-on-primary-subtle] text-xs font-medium">Scroll to explore</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

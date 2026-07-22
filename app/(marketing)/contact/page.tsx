@@ -18,13 +18,13 @@ export default function ContactPage() {
         style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Get In Touch</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Get In Touch</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Contact Our Clinic
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto">
             We&apos;d love to hear from you. Reach out to our friendly team and we&apos;ll respond as quickly as possible.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                   className={`flex items-start gap-4 p-5 rounded-2xl border transition-all duration-200 hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 ${
                     highlight
                       ? "bg-red-50 border-red-200 hover:border-red-300"
-                      : "bg-white border-slate-200 hover:border-[--color-secondary]/40"
+                      : "bg-white border-[--color-border] hover:border-[--color-secondary]/40"
                   }`}
                   aria-label={`${title}: ${content}`}
                 >
@@ -107,7 +107,7 @@ export default function ContactPage() {
               ))}
 
               {/* Hours */}
-              <div className="bg-white rounded-2xl border border-slate-200 p-5">
+              <div className="bg-white rounded-2xl border border-[--color-border] p-5">
                 <h3 className="font-bold text-[--color-text] mb-4 flex items-center gap-2 text-sm uppercase tracking-widest">
                   <Clock className="h-4 w-4 text-[--color-primary]" aria-hidden="true" />
                   Opening Hours
@@ -168,20 +168,20 @@ function ContactFormSimple() {
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="space-y-1.5">
           <label htmlFor="contact-name" className="text-sm font-semibold text-[--color-text]">Name <span className="text-red-500">*</span></label>
-          <input id="contact-name" type="text" placeholder="Your name" className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent" />
+          <input id="contact-name" type="text" placeholder="Your name" className="w-full rounded-xl border border-[--color-border] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent" />
         </div>
         <div className="space-y-1.5">
           <label htmlFor="contact-phone" className="text-sm font-semibold text-[--color-text]">Phone <span className="text-red-500">*</span></label>
-          <input id="contact-phone" type="tel" placeholder="+27 82 000 0000" className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent" />
+          <input id="contact-phone" type="tel" placeholder="+27 82 000 0000" className="w-full rounded-xl border border-[--color-border] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent" />
         </div>
       </div>
       <div className="space-y-1.5">
         <label htmlFor="contact-email" className="text-sm font-semibold text-[--color-text]">Email</label>
-        <input id="contact-email" type="email" placeholder="your@email.com" className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent" />
+        <input id="contact-email" type="email" placeholder="your@email.com" className="w-full rounded-xl border border-[--color-border] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent" />
       </div>
       <div className="space-y-1.5">
         <label htmlFor="contact-message" className="text-sm font-semibold text-[--color-text]">Message</label>
-        <textarea id="contact-message" rows={4} placeholder="How can we help?" className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent resize-none" />
+        <textarea id="contact-message" rows={4} placeholder="How can we help?" className="w-full rounded-xl border border-[--color-border] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent resize-none" />
       </div>
       <button type="submit" className="w-full bg-[--color-primary] text-white font-semibold rounded-full py-3.5 text-sm hover:bg-[--color-primary-light] transition-colors">
         Send Message

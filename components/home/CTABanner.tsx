@@ -28,7 +28,7 @@ export function CTABanner() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-3xl mx-auto"
         >
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">
             Ready to Transform Your Smile?
           </p>
           <h2
@@ -37,7 +37,7 @@ export function CTABanner() {
           >
             Book Your Appointment Today
           </h2>
-          <p className="text-blue-200 text-lg mb-10 leading-relaxed">
+          <p className="text-[--color-on-primary-muted] text-lg mb-10 leading-relaxed">
             Take the first step toward your healthiest smile. New patients always welcome. Same-day emergency slots available.
           </p>
 
@@ -64,7 +64,7 @@ export function CTABanner() {
 
             <a
               href={`tel:${CLINIC_INFO.contact.phonePlain}`}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-white/30 text-white font-semibold text-lg hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-white/40 text-white font-semibold text-lg hover:bg-white hover:text-[--color-primary] transition-all duration-200 hover:-translate-y-0.5"
               aria-label={`Call us at ${CLINIC_INFO.contact.phone}`}
             >
               <Phone className="h-5 w-5" aria-hidden="true" />

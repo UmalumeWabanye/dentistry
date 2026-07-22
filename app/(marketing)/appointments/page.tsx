@@ -17,13 +17,13 @@ export default function AppointmentsPage() {
         style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Online Booking</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Online Booking</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Book Your Appointment
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto">
             Complete the form below and our team will confirm your appointment within 2 hours during business hours.
           </p>
         </div>
@@ -55,10 +55,10 @@ export default function AppointmentsPage() {
 
               <div className="bg-[--color-primary] rounded-3xl p-7 text-white">
                 <h3 className="font-bold text-lg mb-2">Prefer to Call?</h3>
-                <p className="text-blue-200 text-sm mb-4">Our friendly reception team is ready to help.</p>
+                <p className="text-[--color-on-primary-muted] text-sm mb-4">Our friendly reception team is ready to help.</p>
                 <a
                   href={`tel:${CLINIC_INFO.contact.phonePlain}`}
-                  className="flex items-center gap-2 font-bold text-[--color-secondary] hover:text-white transition-colors"
+                  className="flex items-center gap-2 font-bold text-white hover:text-[--color-on-primary-subtle] transition-colors"
                   aria-label={`Call us at ${CLINIC_INFO.contact.phone}`}
                 >
                   <Phone className="h-5 w-5" aria-hidden="true" />

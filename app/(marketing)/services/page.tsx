@@ -41,13 +41,13 @@ export default function ServicesPage() {
         className="relative py-28 lg:py-36 overflow-hidden bg-[--color-primary]"
       >
         <div className="container-custom text-center">
-          <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Our Services</p>
+          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Our Services</p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Comprehensive Dental Care
           </h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto leading-relaxed">
             From routine check-ups to complete smile transformations — we offer everything your family needs under one roof.
           </p>
         </div>

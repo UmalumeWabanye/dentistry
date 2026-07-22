@@ -14,11 +14,11 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const categoryColors: Record<string, string> = {
-  general: "from-blue-500 to-blue-700",
-  cosmetic: "from-purple-500 to-pink-600",
-  restorative: "from-teal-500 to-cyan-600",
-  preventive: "from-green-500 to-emerald-600",
-  emergency: "from-red-500 to-rose-600",
+  general: "bg-[--color-primary]",
+  cosmetic: "bg-[--color-secondary]",
+  restorative: "bg-[--color-accent]",
+  preventive: "bg-[--color-primary-light]",
+  emergency: "bg-[--color-text-muted]",
 };
 
 export function ServicesSection() {
@@ -48,7 +48,7 @@ export function ServicesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {featured.map((service, index) => {
             const Icon = iconMap[service.icon] ?? Stethoscope;
-            const gradient = categoryColors[service.category] ?? "from-blue-500 to-blue-700";
+            const headerColor = categoryColors[service.category] ?? "bg-[--color-primary]";
 
             return (
               <motion.article
@@ -64,7 +64,7 @@ export function ServicesSection() {
                   aria-label={`${service.title} – Learn more`}
                 >
                   {/* Icon header */}
-                  <div className={cn("relative p-8 bg-[--color-primary]", gradient)}>
+                  <div className={cn("relative p-8", headerColor)}>
                     <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-3">
                       <Icon className="h-7 w-7 text-white" aria-hidden="true" />
                     </div>
