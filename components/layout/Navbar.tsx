@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { NAV_LINKS, CLINIC_INFO } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -139,7 +138,6 @@ export function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <ThemeToggle compact />
             <a
               href={`tel:${CLINIC_INFO.contact.phonePlain}`}
               className={cn("flex items-center gap-2 text-sm font-semibold transition-colors", linkColor)}
@@ -190,9 +188,6 @@ export function Navbar() {
               className="lg:hidden overflow-hidden bg-[--color-surface] border-t border-[--color-border]"
             >
               <div className="container-custom py-6 space-y-1">
-                <div className="px-4 pb-3">
-                  <ThemeToggle />
-                </div>
                 {NAV_LINKS.map((link, i) => (
                   <motion.div
                     key={link.href}
@@ -283,7 +278,7 @@ function ScrollProgress() {
 
   return (
     <div
-      className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[--color-primary] to-[--color-secondary] transition-none"
+      className="absolute bottom-0 left-0 h-0.5 bg-[--color-primary] transition-none"
       style={{ width: `${progress}%` }}
       role="progressbar"
       aria-label="Page scroll progress"

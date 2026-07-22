@@ -40,7 +40,7 @@ export function DoctorsSection() {
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[--color-primary]/80 via-transparent to-transparent" aria-hidden="true" />
+                <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
 
                 {/* Rating badge */}
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">

@@ -62,7 +62,7 @@ export function TechnologySection() {
             <div
               className="aspect-square rounded-3xl overflow-hidden"
               style={{
-                background: "linear-gradient(135deg, #0F4C81 0%, #53B6F0 100%)",
+                background: "var(--color-primary)",
               }}
             >
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center" aria-hidden="true">

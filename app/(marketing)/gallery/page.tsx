@@ -15,7 +15,7 @@ export default function GalleryPage() {
       {/* Hero */}
       <section
         className="relative py-28 lg:py-36"
-        style={{ background: "linear-gradient(135deg, #0a2744 0%, #0F4C81 100%)" }}
+        style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
           <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Before & After</p>

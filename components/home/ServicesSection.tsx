@@ -64,7 +64,7 @@ export function ServicesSection() {
                   aria-label={`${service.title} – Learn more`}
                 >
                   {/* Icon header */}
-                  <div className={cn("relative p-8 bg-gradient-to-br", gradient)}>
+                  <div className={cn("relative p-8 bg-[--color-primary]", gradient)}>
                     <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-3">
                       <Icon className="h-7 w-7 text-white" aria-hidden="true" />
                     </div>

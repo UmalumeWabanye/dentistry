@@ -22,8 +22,8 @@ export function InsuranceSection() {
         {/* Marquee */}
         <div className="relative overflow-hidden" role="list" aria-label="Accepted medical aid providers">
           {/* Fade masks */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" aria-hidden="true" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" aria-hidden="true" />
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-[--color-surface] z-10 pointer-events-none" aria-hidden="true" />
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-[--color-surface] z-10 pointer-events-none" aria-hidden="true" />
 
           <motion.div
             className="flex gap-4 w-max"

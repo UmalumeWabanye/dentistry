@@ -14,12 +14,12 @@ const iconMap: Record<string, React.ElementType> = {
   Stethoscope, Sparkles, Zap, AlignCenter, Star, Shield, Crown, AlertCircle,
 };
 
-const categoryGradients: Record<string, string> = {
-  general: "from-blue-500 to-blue-700",
-  cosmetic: "from-purple-500 to-pink-600",
-  restorative: "from-teal-500 to-cyan-600",
-  preventive: "from-green-500 to-emerald-600",
-  emergency: "from-red-500 to-rose-600",
+const categoryColors: Record<string, string> = {
+  general: "bg-[--color-primary]",
+  cosmetic: "bg-[--color-secondary]",
+  restorative: "bg-[--color-accent]",
+  preventive: "bg-[--color-primary-light]",
+  emergency: "bg-[--color-text-muted]",
 };
 
 interface Props {
@@ -48,13 +48,13 @@ export default async function ServicePage({ params }: Props) {
   if (!service) notFound();
 
   const Icon = iconMap[service.icon] ?? Stethoscope;
-  const gradient = categoryGradients[service.category];
+  const categoryColor = categoryColors[service.category] ?? "bg-[--color-primary]";
 
   return (
     <>
       {/* Hero */}
       <section
-        className={cn("relative py-28 lg:py-36 overflow-hidden bg-gradient-to-br", gradient)}
+        className={cn("relative py-28 lg:py-36 overflow-hidden", categoryColor)}
       >
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
@@ -178,7 +178,7 @@ export default async function ServicePage({ params }: Props) {
 
               {/* CTA */}
               <div
-                className={cn("rounded-3xl p-6 bg-gradient-to-br text-white", gradient)}
+                className={cn("rounded-3xl p-6 text-white", categoryColor)}
               >
                 <h3 className="font-bold text-lg mb-2">
                   Ready to get started?

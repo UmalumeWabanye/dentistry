@@ -17,12 +17,12 @@ const iconMap: Record<string, React.ElementType> = {
   Stethoscope, Sparkles, Zap, AlignCenter, Star, Shield, Crown, AlertCircle,
 };
 
-const categoryGradients: Record<string, string> = {
-  general: "from-blue-500 to-blue-700",
-  cosmetic: "from-purple-500 to-pink-600",
-  restorative: "from-teal-500 to-cyan-600",
-  preventive: "from-green-500 to-emerald-600",
-  emergency: "from-red-500 to-rose-600",
+const categoryColors: Record<string, string> = {
+  general: "bg-[--color-primary]",
+  cosmetic: "bg-[--color-secondary]",
+  restorative: "bg-[--color-accent]",
+  preventive: "bg-[--color-primary-light]",
+  emergency: "bg-[--color-text-muted]",
 };
 
 const categoryLabels: Record<string, string> = {
@@ -38,8 +38,7 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section
-        className="relative py-28 lg:py-36 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #0a2744 0%, #0F4C81 100%)" }}
+        className="relative py-28 lg:py-36 overflow-hidden bg-[--color-primary]"
       >
         <div className="container-custom text-center">
           <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Our Services</p>
@@ -69,7 +68,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => {
               const Icon = iconMap[service.icon] ?? Stethoscope;
-              const gradient = categoryGradients[service.category];
+              const headerColor = categoryColors[service.category] ?? "bg-[--color-primary]";
               const catLabel = categoryLabels[service.category];
 
               return (
@@ -80,7 +79,7 @@ export default function ServicesPage() {
                   aria-label={`${service.title} – learn more`}
                 >
                   {/* Coloured header */}
-                  <div className={cn("p-8 bg-gradient-to-br relative overflow-hidden", gradient)}>
+                  <div className={cn("p-8 relative overflow-hidden", headerColor)}>
                     <div className="flex items-start justify-between">
                       <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center">
                         <Icon className="h-7 w-7 text-white" aria-hidden="true" />

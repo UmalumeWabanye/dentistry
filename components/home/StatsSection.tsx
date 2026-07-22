@@ -10,7 +10,7 @@ export function StatsSection() {
     <section
       className="relative py-20 overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #0F4C81 0%, #1a6fa8 50%, #53B6F0 100%)",
+        background: "var(--color-primary)",
       }}
       aria-label="Our achievements"
     >

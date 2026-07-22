@@ -36,7 +36,7 @@ export function TestimonialsSection() {
     <section
       className="section-py relative overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #0a2744 0%, #0F4C81 100%)",
+        background: "var(--color-primary)",
       }}
       aria-labelledby="testimonials-heading"
     >

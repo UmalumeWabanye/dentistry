@@ -49,7 +49,7 @@ export function WhyChooseUsSection() {
               >
                 {/* Hover accent */}
                 <div
-                  className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-[--color-primary] to-[--color-secondary] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left"
+                  className="absolute inset-x-0 top-0 h-0.5 bg-[--color-primary] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left"
                   aria-hidden="true"
                 />
 

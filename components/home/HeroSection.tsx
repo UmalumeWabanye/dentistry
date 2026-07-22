@@ -26,23 +26,14 @@ export function HeroSection() {
       className="relative min-h-screen flex items-center overflow-hidden"
       aria-label="Welcome to Edross Dental"
       style={{
-        background: "var(--gradient-hero)",
+        background: "var(--color-primary)",
       }}
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[--color-secondary] opacity-10 blur-3xl" />
-        <div className="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-[--color-accent] opacity-10 blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[--color-primary-light] opacity-5 blur-3xl" />
-
-        {/* Grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
-        />
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-white opacity-[0.08] blur-3xl" />
+        <div className="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-white opacity-[0.06] blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-black opacity-[0.04] blur-3xl" />
       </div>
 
       <div className="container-custom relative z-10 pt-24 pb-16 lg:pt-32 lg:pb-24">
@@ -72,10 +63,7 @@ export function HeroSection() {
               <span
                 className="relative inline-block"
                 style={{
-                  background: "linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-accent-light) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
+                  color: "#dff0ff",
                 }}
               >
                 Healthiest
@@ -183,8 +171,7 @@ export function HeroSection() {
                   priority
                   sizes="(max-width: 1024px) 0px, 50vw"
                 />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[--color-primary]/30 to-transparent" aria-hidden="true" />
+                <div className="absolute inset-0 bg-black/15" aria-hidden="true" />
               </div>
 
               {/* Floating card – patients */}
@@ -199,7 +186,7 @@ export function HeroSection() {
                     {[1, 2, 3].map((i) => (
                       <div
                         key={i}
-                        className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-300 to-blue-500 border-2 border-white"
+                        className="w-8 h-8 rounded-full bg-[--color-secondary] border-2 border-white"
                       />
                     ))}
                   </div>

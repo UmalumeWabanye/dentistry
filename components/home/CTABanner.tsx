@@ -10,7 +10,7 @@ export function CTABanner() {
     <section
       className="relative py-20 overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #0a2744 0%, #0F4C81 40%, #1a6fa8 100%)",
+        background: "var(--color-primary)",
       }}
       aria-labelledby="cta-heading"
     >
@@ -18,13 +18,6 @@ export function CTABanner() {
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-[--color-secondary] opacity-10 blur-3xl" />
         <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-[--color-accent] opacity-10 blur-3xl" />
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
-            backgroundSize: "32px 32px",
-          }}
-        />
       </div>
 
       <div className="container-custom relative z-10 text-center">

@@ -17,7 +17,7 @@ export default function DoctorsPage() {
       {/* Page Hero */}
       <section
         className="relative py-28 lg:py-36 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #0a2744 0%, #0F4C81 100%)" }}
+        style={{ background: "var(--color-primary)" }}
       >
         <div className="container-custom text-center">
           <p className="text-[--color-secondary] font-semibold uppercase tracking-widest text-sm mb-4">Our Team</p>
@@ -52,7 +52,7 @@ export default function DoctorsPage() {
                       className="object-cover object-top"
                       sizes="(max-width: 1024px) 100vw, 40vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[--color-primary]/50 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0 bg-black/20" aria-hidden="true" />
                   </div>
 
                   {/* Content */}

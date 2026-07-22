@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import "./globals.css";
 
 const geist = Geist({
@@ -66,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col bg-[--color-background] text-[--color-text]">
-        <ThemeProvider>{children}</ThemeProvider>
+        {children}
       </body>
     </html>
   );

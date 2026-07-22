@@ -26,7 +26,7 @@ export function TreatmentJourneySection() {
         <div className="relative">
           {/* Connecting line (desktop) */}
           <div
-            className="absolute top-16 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-[--color-primary] via-[--color-secondary] to-[--color-accent] hidden lg:block"
+            className="absolute top-16 left-[12.5%] right-[12.5%] h-0.5 bg-[--color-border] hidden lg:block"
             aria-hidden="true"
           />
 
@@ -51,7 +51,7 @@ export function TreatmentJourneySection() {
                         index === 0 ? "bg-[--color-primary]" :
                         index === 1 ? "bg-[--color-secondary]" :
                         index === 2 ? "bg-[--color-accent]" :
-                        "bg-gradient-to-br from-[--color-primary] to-[--color-secondary]"
+                        "bg-[--color-primary]"
                       )}
                     >
                       <Icon className="h-7 w-7 text-white" aria-hidden="true" />
