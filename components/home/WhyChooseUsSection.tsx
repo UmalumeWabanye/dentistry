@@ -22,18 +22,18 @@ const cardVariants = {
 
 export function WhyChooseUsSection() {
   return (
-    <section className="section-py bg-[--color-surface]" aria-labelledby="why-choose-heading">
+    <section className="section-py bg-[--color-background]" aria-labelledby="why-choose-heading">
       <div className="container-custom">
-        <SectionHeading
-          eyebrow="Why Edross Dental"
-          title="The Edross Dental"
-          highlight="Difference"
-          description="We combine clinical excellence with genuine patient care to deliver a dental experience unlike any other."
-          align="center"
-          className="mb-14"
-        />
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start">
+          <SectionHeading
+            eyebrow="About The Practice"
+            title="A refreshed clinic with a warmer way of caring for patients."
+            description="We combine contemporary treatment planning, prevention-led care, and a calm, welcoming setting so every patient feels guided rather than rushed."
+            align="left"
+            className="max-w-xl"
+          />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {WHY_CHOOSE_US.map((item, index) => {
             const Icon = iconMap[item.icon] ?? Shield;
 
@@ -45,32 +45,27 @@ export function WhyChooseUsSection() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-40px" }}
-                className="group relative bg-white rounded-3xl p-7 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-xl)] transition-all duration-400 hover:-translate-y-1.5 border border-transparent hover:border-[--color-secondary]/20 overflow-hidden"
+                className="group editorial-panel rounded-[2rem] p-6 transition-all duration-400 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
               >
-                {/* Hover accent */}
-                <div
-                  className="absolute inset-x-0 top-0 h-0.5 bg-[--color-primary] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left"
-                  aria-hidden="true"
-                />
-
-                <div className="mb-5">
-                  <div className="w-14 h-14 rounded-2xl bg-[--color-surface] group-hover:bg-[--color-primary] flex items-center justify-center transition-colors duration-300 shadow-[var(--shadow-sm)]">
+                <div className="mb-6">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[--color-surface-2] transition-colors duration-300 group-hover:bg-[--color-primary]">
                     <Icon
-                      className="h-7 w-7 text-[--color-primary] group-hover:text-white transition-colors duration-300"
+                      className="h-5 w-5 text-[--color-primary] group-hover:text-[--color-on-primary] transition-colors duration-300"
                       aria-hidden="true"
                     />
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-[--color-text] mb-2 group-hover:text-[--color-primary] transition-colors">
+                <h3 className="mb-3 text-3xl leading-[0.96] tracking-[-0.03em] text-[--color-text]">
                   {item.title}
                 </h3>
-                <p className="text-sm text-[--color-text-muted] leading-relaxed">
+                <p className="text-sm leading-relaxed text-[--color-text-muted]">
                   {item.description}
                 </p>
               </motion.div>
             );
           })}
+          </div>
         </div>
       </div>
     </section>

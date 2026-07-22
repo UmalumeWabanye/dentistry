@@ -51,7 +51,7 @@ export function SectionHeading({
       {eyebrow && (
         <span
           className={cn(
-            "inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest",
+            "inline-flex items-center gap-2 editorial-kicker",
             light ? "text-[--color-on-primary-subtle]" : "text-[--color-primary]"
           )}
         >
@@ -63,8 +63,7 @@ export function SectionHeading({
 
       <h2
         className={cn(
-          "text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight",
-          "font-[family-name:var(--font-heading,'Poppins',sans-serif)]",
+          "text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.04em]",
           light ? "text-white" : "text-[--color-text]"
         )}
       >

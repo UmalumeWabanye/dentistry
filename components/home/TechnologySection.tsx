@@ -11,7 +11,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export function TechnologySection() {
   return (
-    <section className="section-py bg-[--color-surface]" aria-labelledby="technology-heading">
+    <section className="section-py bg-[--color-background]" aria-labelledby="technology-heading">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: text */}
@@ -60,9 +60,9 @@ export function TechnologySection() {
             className="relative"
           >
             <div
-              className="aspect-square rounded-3xl overflow-hidden"
+              className="aspect-square rounded-[2rem] overflow-hidden editorial-panel"
               style={{
-                background: "var(--color-primary)",
+                background: "var(--color-surface)",
               }}
             >
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center" aria-hidden="true">
@@ -72,12 +72,12 @@ export function TechnologySection() {
                     return (
                       <div
                         key={tech.title}
-                        className="bg-white/15 backdrop-blur-sm rounded-2xl p-5 flex flex-col items-center gap-3 border border-white/20"
+                        className="rounded-[1.5rem] border border-[--color-border] bg-[--color-surface] p-5 flex flex-col items-center gap-3 shadow-[var(--shadow-sm)]"
                       >
-                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
-                          <Icon className="h-6 w-6 text-white" aria-hidden="true" />
+                        <div className="w-12 h-12 rounded-full bg-[--color-primary]/10 flex items-center justify-center">
+                          <Icon className="h-6 w-6 text-[--color-primary]" aria-hidden="true" />
                         </div>
-                        <span className="text-white text-xs font-semibold text-center leading-tight">{tech.title}</span>
+                        <span className="text-[--color-text] text-xs font-medium text-center leading-tight">{tech.title}</span>
                       </div>
                     );
                   })}
@@ -87,7 +87,7 @@ export function TechnologySection() {
 
             {/* Decoration */}
             <div
-              className="absolute -z-10 -bottom-6 -right-6 w-full h-full rounded-3xl border-4 border-[--color-secondary]/30"
+              className="absolute -z-10 -bottom-6 -right-6 w-full h-full rounded-[2rem] border-4 border-[--color-border]"
               aria-hidden="true"
             />
           </motion.div>

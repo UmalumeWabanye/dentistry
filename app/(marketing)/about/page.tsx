@@ -19,25 +19,28 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative py-28 lg:py-36 overflow-hidden"
-        style={{ background: "var(--color-primary)" }}
-      >
-        <div className="container-custom relative z-10 text-center">
-          <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">About Us</p>
-          <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
-          >
-            Our Story & Mission
-          </h1>
-          <p className="text-[--color-on-primary-muted] text-lg max-w-2xl mx-auto leading-relaxed">
-            Founded on a passion for transforming smiles and improving lives through exceptional dental care.
-          </p>
+      <section className="section-py bg-[--color-surface]">
+        <div className="container-custom grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+          <div className="max-w-2xl">
+            <p className="editorial-kicker mb-5 text-[--color-primary]">About Us</p>
+            <h1 className="max-w-xl text-5xl leading-[0.9] tracking-[-0.05em] text-[--color-text] sm:text-6xl lg:text-7xl">
+              Our Story & Mission
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-[--color-text-muted] sm:text-lg">
+              Founded on a passion for transforming smiles and improving lives through exceptional dental care.
+            </p>
+          </div>
+          <div className="editorial-panel rounded-[2rem] p-6 sm:p-8 lg:p-10">
+            <p className="editorial-kicker mb-4 text-[--color-primary]">Practice at a glance</p>
+            <p className="text-sm leading-relaxed text-[--color-text-muted]">
+              Over 20 years of calm, comprehensive care, delivered by a team that prioritises clarity, comfort, and long-term results.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Story */}
-      <section className="section-py bg-white">
+      <section className="section-py bg-[--color-background]">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
@@ -64,7 +67,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] rounded-[2rem] overflow-hidden shadow-[var(--shadow-lg)]">
                 <Image
                   src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80"
                   alt="The modern, welcoming interior of Edross Dental clinic"
@@ -74,7 +77,7 @@ export default function AboutPage() {
                 />
               </div>
               <div
-                className="absolute -z-10 -bottom-5 -right-5 w-full h-full rounded-3xl border-4 border-[--color-secondary]/20"
+                className="absolute -z-10 -bottom-5 -right-5 w-full h-full rounded-[2rem] border border-[--color-border]"
                 aria-hidden="true"
               />
             </div>
@@ -96,7 +99,7 @@ export default function AboutPage() {
             {WHY_CHOOSE_US.map((item) => {
               const Icon = iconMap[item.icon] ?? Shield;
               return (
-                <div key={item.title} className="bg-white rounded-3xl p-7 shadow-[var(--shadow-sm)]">
+                <div key={item.title} className="editorial-panel rounded-[2rem] p-7">
                   <div className="w-14 h-14 rounded-2xl bg-[--color-primary]/10 flex items-center justify-center mb-5">
                     <Icon className="h-7 w-7 text-[--color-primary]" aria-hidden="true" />
                   </div>
@@ -110,15 +113,12 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section
-        className="py-16"
-        style={{ background: "var(--color-primary)" }}
-      >
+      <section className="section-py bg-[--color-primary]">
         <div className="container-custom">
           <dl className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {CLINIC_INFO.stats.map((stat) => (
               <div key={stat.label}>
-                <dt className="text-4xl sm:text-5xl font-bold text-white mb-2">
+                <dt className="text-4xl sm:text-5xl font-bold text-white mb-2 leading-none">
                   {stat.value.toLocaleString()}{stat.suffix}
                 </dt>
                 <dd className="text-[--color-on-primary-muted] text-sm sm:text-base font-medium">{stat.label}</dd>

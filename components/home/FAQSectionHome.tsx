@@ -9,7 +9,7 @@ export function FAQSectionHome() {
   const homeFaqs = faqs.slice(0, 6);
 
   return (
-    <section className="section-py bg-white" aria-labelledby="faq-home-heading">
+    <section className="section-py bg-[--color-surface]" aria-labelledby="faq-home-heading">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left: heading */}

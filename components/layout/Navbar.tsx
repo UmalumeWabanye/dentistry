@@ -36,12 +36,12 @@ export function Navbar() {
   const navBase = cn(
     "fixed top-0 inset-x-0 z-50 transition-all duration-500",
     scrolled || !isHome
-      ? "bg-[--color-surface]/95 backdrop-blur-lg border-b border-[--color-border]"
+      ? "bg-[--color-surface]/92 backdrop-blur-xl border-b border-[--color-border]"
       : "bg-transparent"
   );
 
   const linkColor = cn(
-    "text-sm font-semibold transition-colors duration-200",
+    "editorial-kicker transition-colors duration-200",
     scrolled || !isHome ? "text-[--color-text] hover:text-[--color-primary]" : "text-white hover:text-[--color-on-primary-subtle]"
   );
 
@@ -61,22 +61,22 @@ export function Navbar() {
         {/* Progress bar */}
         <ScrollProgress />
 
-        <div className="container-custom flex items-center justify-between h-16 sm:h-20">
+        <div className="container-custom flex items-center justify-between h-18 sm:h-22">
           {/* Logo */}
-          <Link href="/" className={cn("flex items-center gap-2.5 group", logoColor)} aria-label="Edross Dental – Home">
+          <Link href="/" className={cn("flex items-center gap-3 group", logoColor)} aria-label="Edross Dental – Home">
             <div className={cn(
-              "w-9 h-9 rounded-xl flex items-center justify-center font-bold text-lg shadow-md transition-all group-hover:scale-105",
+              "w-10 h-10 rounded-full flex items-center justify-center text-sm editorial-kicker border transition-all group-hover:scale-105",
               scrolled || !isHome ? "bg-[--color-primary] text-white" : "bg-white text-[--color-primary]"
             )}>
               E
             </div>
-            <span className="text-lg font-bold tracking-tight ">
+            <span className="text-2xl sm:text-3xl leading-none tracking-[-0.03em] font-[var(--font-display)]">
               Edross <span className={cn(scrolled || !isHome ? "text-[--color-primary]" : "text-[--color-on-primary-subtle]")}>Dental</span>
             </span>
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden lg:flex items-center gap-1" role="menubar">
+          <ul className="hidden lg:flex items-center gap-2" role="menubar">
             {NAV_LINKS.map((link) => (
               <li key={link.href} role="none" className="relative">
                 {link.children ? (
@@ -85,7 +85,7 @@ export function Navbar() {
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
                     <button
-                      className={cn(linkColor, "flex items-center gap-1 px-3 py-2 rounded-lg")}
+                      className={cn(linkColor, "flex items-center gap-1 px-3 py-2 rounded-full")}
                       aria-expanded={openDropdown === link.label}
                       aria-haspopup="true"
                     >
@@ -124,7 +124,7 @@ export function Navbar() {
                     role="menuitem"
                     className={cn(
                       linkColor,
-                      "px-3 py-2 rounded-lg",
+                      "px-3 py-2 rounded-full",
                       pathname === link.href && (scrolled || !isHome ? "text-[--color-primary]" : "text-[--color-accent-light]")
                     )}
                     aria-current={pathname === link.href ? "page" : undefined}
@@ -140,11 +140,11 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href={`tel:${CLINIC_INFO.contact.phonePlain}`}
-              className={cn("flex items-center gap-2 text-sm font-semibold transition-colors", linkColor)}
+              className={cn("hidden xl:flex items-center gap-2 transition-colors", linkColor)}
               aria-label={`Call us: ${CLINIC_INFO.contact.phone}`}
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              <span className="hidden xl:block">{CLINIC_INFO.contact.phone}</span>
+              <span>{CLINIC_INFO.contact.phone}</span>
             </a>
             <Button href="/appointments" size="sm" variant={scrolled || !isHome ? "primary" : "white"}>
               Book Appointment
