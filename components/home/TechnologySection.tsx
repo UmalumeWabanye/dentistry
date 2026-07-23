@@ -32,7 +32,7 @@ export function TechnologySection() {
               return (
                 <div
                   key={tech.title}
-                  className="editorial-panel flex items-start gap-4 rounded-[1.5rem] p-5"
+                  className="editorial-panel flex items-start gap-4 rounded-3xl p-5"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[--color-surface-2] text-[--color-primary] shrink-0">
                     <Icon className="h-5 w-5" aria-hidden="true" />

@@ -25,16 +25,16 @@ export function WhyChooseUsSection() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="editorial-panel rounded-[2rem] p-6">
+            <div className="editorial-panel rounded-4xl p-6">
               <p className="editorial-kicker text-[--color-primary]">20+ years</p>
               <p className="mt-2 text-sm leading-relaxed text-[--color-text-muted]">Serving families across South Africa with consistent, trusted care.</p>
             </div>
-            <div className="editorial-panel rounded-[2rem] p-6">
+            <div className="editorial-panel rounded-4xl p-6">
               <p className="editorial-kicker text-[--color-primary]">Patient-first</p>
               <p className="mt-2 text-sm leading-relaxed text-[--color-text-muted]">Treatment plans that prioritise comfort, clarity, and realistic outcomes.</p>
             </div>
-            <div className="relative overflow-hidden rounded-[2rem] sm:col-span-2">
-              <div className="relative aspect-[16/10]">
+            <div className="relative overflow-hidden rounded-4xl sm:col-span-2">
+              <div className="relative aspect-16/10">
                 <Image
                   src="https://images.unsplash.com/photo-1588776814546-ec7e7f2f6dd5?w=1200&q=80"
                   alt="Dentist consulting with a patient"

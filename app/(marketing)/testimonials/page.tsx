@@ -63,7 +63,7 @@ export default function TestimonialsPage() {
             {testimonials.map((t) => (
               <article
                 key={t.id}
-                className="bg-[--color-surface] rounded-3xl p-7 flex flex-col hover:shadow-[var(--shadow-lg)] transition-all duration-300"
+                className="bg-[--color-surface] rounded-3xl p-7 flex flex-col hover:shadow-(--shadow-lg) transition-all duration-300"
                 aria-label={`Testimonial from ${t.name}`}
               >
                 <div className="flex items-center gap-0.5 mb-4" aria-label={`${t.rating} out of 5 stars`}>

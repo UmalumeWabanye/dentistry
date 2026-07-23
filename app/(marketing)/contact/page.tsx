@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { AppointmentForm } from "@/components/forms/AppointmentForm";
 import { CLINIC_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -88,10 +87,10 @@ export default function ContactPage() {
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className={`flex items-start gap-4 p-5 rounded-2xl border transition-all duration-200 hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 ${
+                  className={`flex items-start gap-4 p-5 rounded-2xl border transition-all duration-200 hover:shadow-(--shadow-md) hover:-translate-y-0.5 ${
                     highlight
                       ? "bg-red-50 border-red-200 hover:border-red-300"
-                      : "bg-white border-[--color-border] hover:border-[--color-secondary]/40"
+                        : "bg-white border-[--color-border] hover:border-[--color-secondary]/40"
                   }`}
                   aria-label={`${title}: ${content}`}
                 >
@@ -128,7 +127,7 @@ export default function ContactPage() {
             {/* Map + Form */}
             <div className="lg:col-span-3 space-y-8">
               {/* Map */}
-              <div className="rounded-3xl overflow-hidden shadow-[var(--shadow-md)] aspect-video">
+              <div className="rounded-3xl overflow-hidden shadow-(--shadow-md) aspect-video">
                 <iframe
                   src={CLINIC_INFO.mapEmbedUrl}
                   width="100%"
@@ -143,7 +142,7 @@ export default function ContactPage() {
               </div>
 
               {/* Quick contact form */}
-              <div className="bg-white rounded-3xl p-8 shadow-[var(--shadow-sm)]">
+              <div className="bg-white rounded-3xl p-8 shadow-(--shadow-sm)">
                 <h2 className="text-2xl font-bold text-[--color-text] mb-2">
                   Send Us a Message
                 </h2>

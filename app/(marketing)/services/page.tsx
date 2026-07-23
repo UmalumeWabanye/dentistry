@@ -75,7 +75,7 @@ export default function ServicesPage() {
                 <Link
                   key={service.id}
                   href={`/services/${service.slug}`}
-                  className="group bg-white rounded-3xl overflow-hidden shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-xl)] transition-all duration-400 hover:-translate-y-1.5 flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-[--color-primary]"
+                  className="group bg-white rounded-3xl overflow-hidden shadow-(--shadow-sm) hover:shadow-(--shadow-xl) transition-all duration-400 hover:-translate-y-1.5 flex flex-col focus-visible:outline focus-visible:outline-[--color-primary]"
                   aria-label={`${service.title} – learn more`}
                 >
                   {/* Coloured header */}

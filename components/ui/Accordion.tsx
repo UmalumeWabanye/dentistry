@@ -35,8 +35,8 @@ export function Accordion({ items, className }: AccordionProps) {
             className={cn(
               "rounded-2xl border transition-all duration-300",
               isOpen
-                ? "border-[--color-primary] bg-white shadow-[var(--shadow-lg)]"
-                : "border-[--color-border] bg-white hover:border-[--color-secondary] hover:shadow-[var(--shadow-md)]"
+                ? "border-[--color-primary] bg-white shadow-(--shadow-lg)"
+                : "border-[--color-border] bg-white hover:border-[--color-secondary] hover:shadow-(--shadow-md)"
             )}
           >
             <button

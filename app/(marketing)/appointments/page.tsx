@@ -34,7 +34,7 @@ export default function AppointmentsPage() {
           <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
             {/* Sidebar */}
             <aside className="lg:col-span-1 space-y-6">
-              <div className="bg-white rounded-3xl p-7 shadow-[var(--shadow-sm)]">
+              <div className="bg-white rounded-3xl p-7 shadow-(--shadow-sm)">
                 <h2 className="text-xl font-bold text-[--color-text] mb-5">Why Book With Us?</h2>
                 <ul className="space-y-4">
                   {[
@@ -66,7 +66,7 @@ export default function AppointmentsPage() {
                 </a>
               </div>
 
-              <div className="bg-white rounded-3xl p-7 shadow-[var(--shadow-sm)]">
+              <div className="bg-white rounded-3xl p-7 shadow-(--shadow-sm)">
                 <h3 className="font-bold text-[--color-text] mb-4 flex items-center gap-2">
                   <Clock className="h-5 w-5 text-[--color-primary]" aria-hidden="true" />
                   Opening Hours
@@ -86,7 +86,7 @@ export default function AppointmentsPage() {
 
             {/* Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-[var(--shadow-sm)]">
+              <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-(--shadow-sm)">
                 <h2 className="text-2xl font-bold text-[--color-text] mb-2">
                   Request an Appointment
                 </h2>

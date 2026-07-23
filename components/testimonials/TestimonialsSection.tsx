@@ -39,7 +39,7 @@ export function TestimonialsSection() {
                 role="article"
                 aria-label={`Testimonial from ${testimonial.name}`}
               >
-                <div className="editorial-panel rounded-[2rem] p-7 h-full flex flex-col">
+                <div className="editorial-panel rounded-4xl p-7 h-full flex flex-col">
                   {/* Stars */}
                   <div className="flex items-center gap-0.5 mb-4" aria-label={`${testimonial.rating} out of 5 stars`}>
                     {Array.from({ length: testimonial.rating }).map((_, i) => (

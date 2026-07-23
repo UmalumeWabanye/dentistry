@@ -39,7 +39,7 @@ export default function DoctorsPage() {
             {doctors.map((doctor, index) => (
               <article
                 key={doctor.id}
-                className="bg-white rounded-3xl overflow-hidden shadow-[var(--shadow-md)]"
+                className="bg-white rounded-3xl overflow-hidden shadow-(--shadow-md)"
                 aria-label={doctor.name}
               >
                 <div className={`grid lg:grid-cols-5 gap-0 ${index % 2 !== 0 ? "lg:[&>*:first-child]:order-last" : ""}`}>

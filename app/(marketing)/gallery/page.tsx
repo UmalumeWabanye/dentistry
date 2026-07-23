@@ -58,7 +58,7 @@ export default function GalleryPage() {
             {galleryItems.map((item) => (
               <article
                 key={item.id}
-                className="bg-white rounded-3xl overflow-hidden shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-lg)] transition-all duration-300"
+                className="bg-white rounded-3xl overflow-hidden shadow-(--shadow-sm) hover:shadow-(--shadow-lg) transition-all duration-300"
                 aria-label={`${item.treatment} before and after`}
               >
                 <div className="grid grid-cols-2">

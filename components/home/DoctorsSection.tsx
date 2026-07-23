@@ -25,12 +25,12 @@ export function DoctorsSection() {
             <article
               key={doctor.id}
               className={cn(
-                "grid gap-0 overflow-hidden rounded-[2rem] border border-[--color-border] bg-[--color-surface]",
+                "grid gap-0 overflow-hidden rounded-4xl border border-[--color-border] bg-[--color-surface]",
                 index % 2 === 0 ? "lg:grid-cols-[0.92fr_1.08fr]" : "lg:grid-cols-[1.08fr_0.92fr]"
               )}
             >
               {/* Image */}
-              <div className="relative aspect-[4/5] overflow-hidden lg:aspect-auto lg:min-h-[30rem]">
+              <div className="relative aspect-4/5 overflow-hidden lg:aspect-auto lg:min-h-120">
                 <Image
                   src={doctor.image}
                   alt={`${doctor.name}, ${doctor.title} at Edross Dental`}

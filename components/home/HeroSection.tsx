@@ -12,7 +12,7 @@ export function HeroSection() {
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div>
             <p className="editorial-kicker mb-6 text-[--color-primary]">Edross Dental Practice</p>
-            <h1 className="max-w-4xl text-5xl leading-[0.9] tracking-[-0.05em] text-[--color-text] sm:text-6xl lg:text-8xl">
+            <h1 className="max-w-4xl text-5xl leading-[0.9] tracking-tighter text-[--color-text] sm:text-6xl lg:text-8xl">
               Premium dental care,
               <br />
               personally delivered.
@@ -36,8 +36,8 @@ export function HeroSection() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="relative overflow-hidden rounded-[2rem] sm:translate-y-10">
-              <div className="relative aspect-[4/5]">
+            <div className="relative overflow-hidden rounded-4xl sm:translate-y-10">
+              <div className="relative aspect-4/5">
                 <Image
                   src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=900&q=80"
                   alt="Patient after dental treatment"
@@ -49,8 +49,8 @@ export function HeroSection() {
               </div>
             </div>
             <div className="space-y-4">
-              <div className="relative overflow-hidden rounded-[2rem]">
-                <div className="relative aspect-[4/4.8]">
+              <div className="relative overflow-hidden rounded-4xl">
+                <div className="relative aspect-4/4.8">
                   <Image
                     src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80"
                     alt="Dental practice interior"
@@ -60,8 +60,8 @@ export function HeroSection() {
                   />
                 </div>
               </div>
-              <div className="editorial-panel rounded-[2rem] p-5">
-                <p className="editorial-kicker text-[--color-primary]">Open Mon to Sat</p>
+              <div className="editorial-panel rounded-4xl p-5">
+                <p className="editorial-kicker font-(--font-mono) text-[--color-primary]">Open Mon to Sat</p>
                 <p className="mt-2 text-sm leading-relaxed text-[--color-text-muted]">
                   New patients welcome. Same-day support for urgent dental care.
                 </p>

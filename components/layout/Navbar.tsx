@@ -52,7 +52,7 @@ export function Navbar() {
       {/* Skip navigation for accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-[--color-primary] text-[--color-on-primary] px-4 py-2 rounded-lg font-semibold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-100 bg-[--color-primary] text-[--color-on-primary] px-4 py-2 rounded-lg font-semibold"
       >
         Skip to main content
       </a>
@@ -70,7 +70,7 @@ export function Navbar() {
             )}>
               E
             </div>
-            <span className="text-2xl sm:text-3xl leading-none tracking-[-0.03em] font-[var(--font-display)]">
+            <span className="text-2xl sm:text-3xl leading-none tracking-[-0.03em] font-(--font-display)">
               Edross <span className={cn(scrolled || !isHome ? "text-[--color-primary]" : "text-[--color-on-primary-subtle]")}>Dental</span>
             </span>
           </Link>
@@ -102,7 +102,7 @@ export function Navbar() {
                           className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
                           role="menu"
                         >
-                          <div className="rounded-2xl border border-[--color-border] bg-[--color-surface] p-2 min-w-[220px] shadow-2xl backdrop-blur-0">
+                          <div className="rounded-2xl border border-[--color-border] bg-[--color-surface] p-2 min-w-55 shadow-2xl backdrop-blur-0">
                             {link.children.map((child) => (
                               <Link
                                 key={child.href}

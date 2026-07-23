@@ -46,7 +46,7 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article
                 key={post.id}
-                className="group bg-white rounded-3xl overflow-hidden shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-xl)] transition-all duration-400 hover:-translate-y-1.5 flex flex-col"
+                className="group bg-white rounded-3xl overflow-hidden shadow-(--shadow-sm) hover:shadow-(--shadow-xl) transition-all duration-400 hover:-translate-y-1.5 flex flex-col"
                 aria-label={post.title}
               >
                 <div className="relative aspect-video overflow-hidden">

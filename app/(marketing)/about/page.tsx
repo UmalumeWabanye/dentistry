@@ -23,14 +23,14 @@ export default function AboutPage() {
         <div className="container-custom grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div className="max-w-2xl">
             <p className="editorial-kicker mb-5 text-[--color-primary]">About Us</p>
-            <h1 className="max-w-xl text-5xl leading-[0.9] tracking-[-0.05em] text-[--color-text] sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-xl text-5xl leading-[0.9] tracking-tighter text-[--color-text] sm:text-6xl lg:text-7xl">
               Our Story & Mission
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-[--color-text-muted] sm:text-lg">
               Founded on a passion for transforming smiles and improving lives through exceptional dental care.
             </p>
           </div>
-          <div className="editorial-panel rounded-[2rem] p-6 sm:p-8 lg:p-10">
+          <div className="editorial-panel rounded-4xl p-6 sm:p-8 lg:p-10">
             <p className="editorial-kicker mb-4 text-[--color-primary]">Practice at a glance</p>
             <p className="text-sm leading-relaxed text-[--color-text-muted]">
               Over 20 years of calm, comprehensive care, delivered by a team that prioritises clarity, comfort, and long-term results.
@@ -67,7 +67,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-[2rem] overflow-hidden shadow-[var(--shadow-lg)]">
+              <div className="aspect-4/3 rounded-4xl overflow-hidden shadow-(--shadow-lg)">
                 <Image
                   src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80"
                   alt="The modern, welcoming interior of Edross Dental clinic"
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 />
               </div>
               <div
-                className="absolute -z-10 -bottom-5 -right-5 w-full h-full rounded-[2rem] border border-[--color-border]"
+                className="absolute -z-10 -bottom-5 -right-5 w-full h-full rounded-4xl border border-[--color-border]"
                 aria-hidden="true"
               />
             </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             {WHY_CHOOSE_US.map((item) => {
               const Icon = iconMap[item.icon] ?? Shield;
               return (
-                <div key={item.title} className="editorial-panel rounded-[2rem] p-7">
+                <div key={item.title} className="editorial-panel rounded-4xl p-7">
                   <div className="w-14 h-14 rounded-2xl bg-[--color-primary]/10 flex items-center justify-center mb-5">
                     <Icon className="h-7 w-7 text-[--color-primary]" aria-hidden="true" />
                   </div>

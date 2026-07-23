@@ -44,7 +44,7 @@ export function ServicesSection() {
               <article key={service.id}>
                 <Link
                   href={`/services/${service.slug}`}
-                  className="group flex h-full items-start gap-4 rounded-[2rem] border border-[--color-border] bg-[--color-background] p-6 transition-colors hover:border-[--color-primary]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[--color-primary]"
+                  className="group flex h-full items-start gap-4 rounded-4xl border border-[--color-border] bg-[--color-background] p-6 transition-colors hover:border-[--color-primary]/30 focus-visible:outline-2 focus-visible:outline-[--color-primary]"
                   aria-label={`${service.title} – Learn more`}
                 >
                   <div className={cn("flex h-12 w-12 shrink-0 items-center justify-center rounded-full", headerColor)}>

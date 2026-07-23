@@ -77,7 +77,7 @@ export default function ResourcesPage() {
               return (
                 <article
                   key={item.title}
-                  className="bg-white rounded-3xl p-7 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-lg)] transition-all duration-300"
+                  className="bg-white rounded-3xl p-7 shadow-(--shadow-sm) hover:shadow-(--shadow-lg) transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-xl bg-[--color-primary]/10 flex items-center justify-center mb-4">
                     <Icon className="h-6 w-6 text-[--color-primary]" aria-hidden="true" />
