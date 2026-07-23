@@ -20,7 +20,7 @@ export default function ContactPage() {
         <div className="container-custom text-center">
           <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Get In Touch</p>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[--color-on-primary] mb-6 leading-tight"
           >
             Contact Our Clinic
           </h1>
@@ -183,7 +183,7 @@ function ContactFormSimple() {
         <label htmlFor="contact-message" className="text-sm font-semibold text-[--color-text]">Message</label>
         <textarea id="contact-message" rows={4} placeholder="How can we help?" className="w-full rounded-xl border border-[--color-border] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[--color-primary] focus:border-transparent resize-none" />
       </div>
-      <button type="submit" className="w-full bg-[--color-primary] text-white font-semibold rounded-full py-3.5 text-sm hover:bg-[--color-primary-light] transition-colors">
+      <button type="submit" className="w-full bg-[--color-primary] text-[--color-on-primary] font-semibold rounded-full py-3.5 text-sm hover:bg-[--color-primary-light] transition-colors">
         Send Message
       </button>
     </div>

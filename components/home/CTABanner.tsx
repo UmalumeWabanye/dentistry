@@ -33,7 +33,7 @@ export function CTABanner() {
           </p>
           <h2
             id="cta-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[--color-on-primary] mb-5 leading-tight tracking-tight"
           >
             Book Your Appointment Today
           </h2>
@@ -55,7 +55,7 @@ export function CTABanner() {
               href={`https://wa.me/${CLINIC_INFO.contact.whatsapp}?text=Hi%2C%20I'd%20like%20to%20book%20an%20appointment`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-emerald-400 text-emerald-400 font-semibold text-lg hover:bg-emerald-400 hover:text-white transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-emerald-400 text-emerald-400 font-semibold text-lg hover:bg-emerald-400 hover:text-[--color-text] transition-all duration-200 hover:-translate-y-0.5"
               aria-label="Contact us on WhatsApp"
             >
               <MessageCircle className="h-5 w-5" aria-hidden="true" />
@@ -64,7 +64,7 @@ export function CTABanner() {
 
             <a
               href={`tel:${CLINIC_INFO.contact.phonePlain}`}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-white/40 text-white font-semibold text-lg hover:bg-white hover:text-[--color-primary] transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-[--color-on-primary-muted] text-[--color-on-primary] font-semibold text-lg hover:bg-[--color-on-primary] hover:text-[--color-primary] transition-all duration-200 hover:-translate-y-0.5"
               aria-label={`Call us at ${CLINIC_INFO.contact.phone}`}
             >
               <Phone className="h-5 w-5" aria-hidden="true" />

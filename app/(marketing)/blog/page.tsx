@@ -22,7 +22,7 @@ export default function BlogPage() {
         <div className="container-custom text-center">
           <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Dental Insights</p>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[--color-on-primary] mb-6 leading-tight"
           >
             Dental Health Blog
           </h1>
@@ -58,7 +58,7 @@ export default function BlogPage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute top-3 left-3">
-                    <span className="bg-[--color-primary] text-white text-xs font-bold px-3 py-1.5 rounded-full">
+                    <span className="bg-[--color-primary] text-[--color-on-primary] text-xs font-bold px-3 py-1.5 rounded-full">
                       {post.category}
                     </span>
                   </div>

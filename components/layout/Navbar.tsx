@@ -42,17 +42,17 @@ export function Navbar() {
 
   const linkColor = cn(
     "editorial-kicker transition-colors duration-200",
-    scrolled || !isHome ? "text-[--color-text] hover:text-[--color-primary]" : "text-white hover:text-[--color-on-primary-subtle]"
+    scrolled || !isHome ? "text-[--color-text] hover:text-[--color-primary]" : "text-[--color-primary] hover:text-[--color-primary-dark]"
   );
 
-  const logoColor = scrolled || !isHome ? "text-[--color-primary]" : "text-white";
+  const logoColor = "text-[--color-primary]";
 
   return (
     <>
       {/* Skip navigation for accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-[--color-primary] text-white px-4 py-2 rounded-lg font-semibold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-[--color-primary] text-[--color-on-primary] px-4 py-2 rounded-lg font-semibold"
       >
         Skip to main content
       </a>
@@ -66,7 +66,7 @@ export function Navbar() {
           <Link href="/" className={cn("flex items-center gap-3 group", logoColor)} aria-label="Edross Dental – Home">
             <div className={cn(
               "w-10 h-10 rounded-full flex items-center justify-center text-sm editorial-kicker border transition-all group-hover:scale-105",
-              scrolled || !isHome ? "bg-[--color-primary] text-white" : "bg-white text-[--color-primary]"
+              scrolled || !isHome ? "bg-[--color-primary] text-[--color-on-primary]" : "bg-[--color-surface] text-[--color-primary]"
             )}>
               E
             </div>
@@ -156,7 +156,7 @@ export function Navbar() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className={cn(
               "lg:hidden p-2 rounded-xl transition-colors",
-              scrolled || !isHome ? "text-[--color-text] hover:bg-[--color-surface]" : "text-white hover:bg-white/10"
+              scrolled || !isHome ? "text-[--color-text] hover:bg-[--color-surface]" : "text-[--color-primary] hover:bg-[--color-surface-2]"
             )}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}

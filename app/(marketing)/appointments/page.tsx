@@ -19,7 +19,7 @@ export default function AppointmentsPage() {
         <div className="container-custom text-center">
           <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Online Booking</p>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[--color-on-primary] mb-6 leading-tight"
           >
             Book Your Appointment
           </h1>
@@ -53,12 +53,12 @@ export default function AppointmentsPage() {
                 </ul>
               </div>
 
-              <div className="bg-[--color-primary] rounded-3xl p-7 text-white">
+              <div className="bg-[--color-primary] rounded-3xl p-7 text-[--color-on-primary]">
                 <h3 className="font-bold text-lg mb-2">Prefer to Call?</h3>
                 <p className="text-[--color-on-primary-muted] text-sm mb-4">Our friendly reception team is ready to help.</p>
                 <a
                   href={`tel:${CLINIC_INFO.contact.phonePlain}`}
-                  className="flex items-center gap-2 font-bold text-white hover:text-[--color-on-primary-subtle] transition-colors"
+                  className="flex items-center gap-2 font-bold text-[--color-on-primary] hover:text-[--color-on-primary-subtle] transition-colors"
                   aria-label={`Call us at ${CLINIC_INFO.contact.phone}`}
                 >
                   <Phone className="h-5 w-5" aria-hidden="true" />

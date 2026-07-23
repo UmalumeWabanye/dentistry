@@ -20,7 +20,7 @@ export default function GalleryPage() {
         <div className="container-custom text-center">
           <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Before & After</p>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[--color-on-primary] mb-6 leading-tight"
           >
             Smile Gallery
           </h1>
@@ -70,7 +70,7 @@ export default function GalleryPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
-                    <span className="absolute top-3 left-3 bg-black/50 text-white text-xs font-bold px-2.5 py-1 rounded-full">
+                    <span className="absolute top-3 left-3 bg-black/50 text-[--color-on-primary] text-xs font-bold px-2.5 py-1 rounded-full">
                       Before
                     </span>
                   </div>
@@ -82,7 +82,7 @@ export default function GalleryPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
-                    <span className="absolute top-3 left-3 bg-[--color-accent] text-white text-xs font-bold px-2.5 py-1 rounded-full">
+                    <span className="absolute top-3 left-3 bg-[--color-accent] text-[--color-text] text-xs font-bold px-2.5 py-1 rounded-full">
                       After
                     </span>
                   </div>

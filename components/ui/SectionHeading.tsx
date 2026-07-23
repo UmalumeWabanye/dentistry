@@ -64,7 +64,7 @@ export function SectionHeading({
       <h2
         className={cn(
           "text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.04em]",
-          light ? "text-white" : "text-[--color-text]"
+          light ? "text-[--color-on-primary]" : "text-[--color-text]"
         )}
       >
         {highlight ? (

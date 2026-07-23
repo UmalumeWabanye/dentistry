@@ -59,7 +59,7 @@ export function Accordion({ items, className }: AccordionProps) {
                 className={cn(
                   "shrink-0 mt-0.5 h-5 w-5 rounded-full flex items-center justify-center transition-colors",
                   isOpen
-                    ? "bg-[--color-primary] text-white"
+                    ? "bg-[--color-primary] text-[--color-on-primary]"
                     : "bg-[--color-surface-2] text-[--color-text-muted]"
                 )}
                 aria-hidden="true"

@@ -22,7 +22,7 @@ export default function DoctorsPage() {
         <div className="container-custom text-center">
           <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Our Team</p>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[--color-on-primary] mb-6 leading-tight"
           >
             Meet Your Dental Experts
           </h1>

@@ -24,13 +24,13 @@ const variants = {
   primary:
     "bg-[--color-primary] text-[--color-on-primary] hover:bg-[--color-primary-light] shadow-[var(--shadow-primary)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5",
   secondary:
-    "bg-[--color-accent] text-white hover:bg-[--color-accent-dark] shadow-[var(--shadow-accent)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5",
+    "bg-[--color-accent] text-[--color-text] hover:bg-[--color-accent-dark] shadow-[var(--shadow-accent)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5",
   outline:
     "border border-[--color-primary] text-[--color-primary] bg-transparent hover:bg-[--color-primary] hover:text-[--color-on-primary] hover:-translate-y-0.5",
   ghost:
     "text-[--color-primary] bg-transparent hover:bg-[--color-surface-2] hover:-translate-y-0.5",
   white:
-    "bg-[--color-surface] text-[--color-primary] hover:bg-white shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5",
+    "bg-[--color-surface] text-[--color-primary] hover:bg-[--color-surface-2] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5",
 };
 
 const sizes = {

@@ -60,20 +60,22 @@ export default async function ServicePage({ params }: Props) {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                <Icon className="h-8 w-8 text-white" aria-hidden="true" />
+                <Icon className="h-8 w-8 text-[--color-on-primary]" aria-hidden="true" />
               </div>
-              <span className="text-sm font-bold bg-white/20 text-white rounded-full px-4 py-1.5 uppercase tracking-wider">
+              <span className="text-sm font-bold bg-white/20 text-[--color-on-primary] rounded-full px-4 py-1.5 uppercase tracking-wider">
                 {service.category} dentistry
               </span>
             </div>
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[--color-on-primary] mb-5 leading-tight"
             >
               {service.title}
             </h1>
             <p className="text-[--color-on-primary-muted] text-lg max-w-xl leading-relaxed mb-8">{service.shortDescription}</p>
             <div className="flex flex-wrap gap-4">
-              <Button href="/appointments" variant="white" size="lg">Book This Treatment</Button>
+              <Button href="/appointments" variant="outline" size="lg" className="border-[--color-on-primary] text-[--color-on-primary] hover:bg-[--color-on-primary] hover:text-[--color-primary]">
+                Book This Treatment
+              </Button>
               <div className="flex items-center gap-4 text-[--color-on-primary-muted] text-sm">
                 <div className="flex items-center gap-1.5">
                   <Clock className="h-4 w-4" aria-hidden="true" />
@@ -126,7 +128,7 @@ export default async function ServicePage({ params }: Props) {
                 <ol className="space-y-6" aria-label="Treatment steps">
                   {service.process.map((step) => (
                     <li key={step.step} className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-full bg-[--color-primary] text-white flex items-center justify-center font-bold text-sm shrink-0" aria-label={`Step ${step.step}`}>
+                      <div className="w-10 h-10 rounded-full bg-[--color-primary] text-[--color-on-primary] flex items-center justify-center font-bold text-sm shrink-0" aria-label={`Step ${step.step}`}>
                         {step.step}
                       </div>
                       <div>
@@ -178,7 +180,7 @@ export default async function ServicePage({ params }: Props) {
 
               {/* CTA */}
               <div
-                className={cn("rounded-3xl p-6 text-white", categoryColor)}
+                className={cn("rounded-3xl p-6 text-[--color-on-primary]", categoryColor)}
               >
                 <h3 className="font-bold text-lg mb-2">
                   Ready to get started?
@@ -186,7 +188,7 @@ export default async function ServicePage({ params }: Props) {
                 <p className="text-[--color-on-primary-muted] text-sm mb-5 leading-relaxed">
                   Book a consultation today and we&apos;ll create your personalised treatment plan.
                 </p>
-                <Button href="/appointments" variant="white" size="md" className="w-full justify-center">
+                <Button href="/appointments" variant="outline" size="md" className="w-full justify-center border-[--color-on-primary] text-[--color-on-primary] hover:bg-[--color-on-primary] hover:text-[--color-primary]">
                   Book Appointment
                 </Button>
               </div>

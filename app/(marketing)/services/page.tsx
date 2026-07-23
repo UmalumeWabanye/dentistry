@@ -43,7 +43,7 @@ export default function ServicesPage() {
         <div className="container-custom text-center">
           <p className="text-[--color-on-primary-subtle] font-semibold uppercase tracking-widest text-sm mb-4">Our Services</p>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[--color-on-primary] mb-6 leading-tight"
           >
             Comprehensive Dental Care
           </h1>
@@ -82,9 +82,9 @@ export default function ServicesPage() {
                   <div className={cn("p-8 relative overflow-hidden", headerColor)}>
                     <div className="flex items-start justify-between">
                       <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center">
-                        <Icon className="h-7 w-7 text-white" aria-hidden="true" />
+                        <Icon className="h-7 w-7 text-[--color-on-primary]" aria-hidden="true" />
                       </div>
-                      <span className="text-xs font-bold bg-white/20 text-white rounded-full px-3 py-1 uppercase tracking-wider">
+                      <span className="text-xs font-bold bg-white/20 text-[--color-on-primary] rounded-full px-3 py-1 uppercase tracking-wider">
                         {catLabel}
                       </span>
                     </div>

@@ -57,7 +57,7 @@ export function StatCounter({
       <span
         className={cn(
           "text-4xl sm:text-5xl font-bold  tabular-nums",
-          light ? "text-white" : "text-[--color-primary]"
+          light ? "text-[--color-on-primary]" : "text-[--color-primary]"
         )}
         aria-label={`${prefix}${value}${suffix}`}
       >

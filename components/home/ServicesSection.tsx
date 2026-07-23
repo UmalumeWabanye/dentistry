@@ -13,11 +13,11 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const categoryColors: Record<string, string> = {
-  general: "bg-[--color-primary]",
-  cosmetic: "bg-[--color-secondary]",
-  restorative: "bg-[--color-accent]",
-  preventive: "bg-[--color-primary-light]",
-  emergency: "bg-[--color-text-muted]",
+  general: "bg-[--color-surface-2]",
+  cosmetic: "bg-[--color-surface-2]",
+  restorative: "bg-[--color-surface-2]",
+  preventive: "bg-[--color-surface-2]",
+  emergency: "bg-[--color-surface-2]",
 };
 
 export function ServicesSection() {
@@ -48,7 +48,7 @@ export function ServicesSection() {
                   aria-label={`${service.title} – Learn more`}
                 >
                   <div className={cn("flex h-12 w-12 shrink-0 items-center justify-center rounded-full", headerColor)}>
-                    <Icon className="h-5 w-5 text-white" aria-hidden="true" />
+                    <Icon className="h-5 w-5 text-[--color-primary]" aria-hidden="true" />
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="editorial-kicker mb-2 text-[--color-primary]">{service.category}</p>

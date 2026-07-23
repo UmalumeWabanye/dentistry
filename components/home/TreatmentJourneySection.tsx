@@ -54,7 +54,7 @@ export function TreatmentJourneySection() {
                         "bg-[--color-primary]"
                       )}
                     >
-                      <Icon className="h-7 w-7 text-white" aria-hidden="true" />
+                      <Icon className="h-7 w-7 text-[--color-on-primary]" aria-hidden="true" />
                     </div>
                     <div
                       className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-white border-2 border-[--color-primary] flex items-center justify-center text-xs font-bold text-[--color-primary]"

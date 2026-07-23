@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <footer className="bg-[--color-primary-dark] text-[--color-on-primary-muted]" role="contentinfo">
       {/* Emergency Banner */}
-      <div className="bg-[--color-error] text-white py-3">
+      <div className="bg-[--color-error] text-[--color-on-primary] py-3">
         <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-2 text-sm font-medium">
           <span className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-white animate-pulse" aria-hidden="true" />
@@ -33,10 +33,10 @@ export function Footer() {
           {/* Column 1 – Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-5 group" aria-label="Edross Dental – Home">
-              <div className="w-10 h-10 rounded-xl bg-[--color-primary] flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-xl bg-[--color-primary] flex items-center justify-center text-[--color-on-primary] font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
                 E
               </div>
-              <span className="text-xl font-bold text-white ">
+              <span className="text-xl font-bold text-[--color-on-primary] ">
                 Edross <span className="text-[--color-on-primary-subtle]">Dental</span>
               </span>
             </Link>
@@ -56,7 +56,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-white/10 hover:bg-[--color-primary] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 text-xs font-bold text-[--color-on-primary-muted]"
+                  className="w-9 h-9 rounded-lg bg-white/10 hover:bg-[--color-primary] hover:text-[--color-on-primary] flex items-center justify-center transition-all duration-200 hover:scale-105 text-xs font-bold text-[--color-on-primary-muted]"
                 >
                   {initial}
                 </a>
@@ -66,20 +66,20 @@ export function Footer() {
 
           {/* Column 2 – Services */}
           <div>
-            <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Our Services</h3>
+            <h3 className="text-[--color-on-primary] font-bold text-sm uppercase tracking-widest mb-5">Our Services</h3>
             <ul className="space-y-2.5">
               {featuredServices.map((service) => (
                 <li key={service.id}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-sm hover:text-white transition-colors hover:translate-x-0.5 inline-block"
+                    className="text-sm hover:text-[--color-on-primary] transition-colors hover:translate-x-0.5 inline-block"
                   >
                     {service.title}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/services" className="text-sm text-white hover:text-[--color-on-primary-subtle] font-medium transition-colors">
+                <Link href="/services" className="text-sm text-[--color-on-primary] hover:text-[--color-on-primary-subtle] font-medium transition-colors">
                   View All Services →
                 </Link>
               </li>
@@ -88,7 +88,7 @@ export function Footer() {
 
           {/* Column 3 – Quick Links + Hours */}
           <div>
-            <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
+            <h3 className="text-[--color-on-primary] font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h3>
             <ul className="space-y-2.5 mb-6">
               {[
                 { label: "About Us", href: "/about" },
@@ -100,7 +100,7 @@ export function Footer() {
                 { label: "Contact", href: "/contact" },
               ].map(({ label, href }) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm hover:text-white transition-colors hover:translate-x-0.5 inline-block">
+                  <Link href={href} className="text-sm hover:text-[--color-on-primary] transition-colors hover:translate-x-0.5 inline-block">
                     {label}
                   </Link>
                 </li>
@@ -110,7 +110,7 @@ export function Footer() {
 
           {/* Column 4 – Contact */}
           <div>
-            <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Contact Us</h3>
+            <h3 className="text-[--color-on-primary] font-bold text-sm uppercase tracking-widest mb-5">Contact Us</h3>
             <ul className="space-y-3.5 text-sm mb-6">
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 mt-0.5 text-[--color-on-primary-subtle] shrink-0" aria-hidden="true" />
@@ -118,13 +118,13 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-[--color-on-primary-subtle] shrink-0" aria-hidden="true" />
-                <a href={`tel:${CLINIC_INFO.contact.phonePlain}`} className="hover:text-white transition-colors">
+                <a href={`tel:${CLINIC_INFO.contact.phonePlain}`} className="hover:text-[--color-on-primary] transition-colors">
                   {CLINIC_INFO.contact.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-[--color-on-primary-subtle] shrink-0" aria-hidden="true" />
-                <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-white transition-colors">
+                <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-[--color-on-primary] transition-colors">
                   {CLINIC_INFO.contact.email}
                 </a>
               </li>

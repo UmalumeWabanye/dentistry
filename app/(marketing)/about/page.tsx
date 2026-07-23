@@ -118,7 +118,7 @@ export default function AboutPage() {
           <dl className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {CLINIC_INFO.stats.map((stat) => (
               <div key={stat.label}>
-                <dt className="text-4xl sm:text-5xl font-bold text-white mb-2 leading-none">
+                <dt className="text-4xl sm:text-5xl font-bold text-[--color-on-primary] mb-2 leading-none">
                   {stat.value.toLocaleString()}{stat.suffix}
                 </dt>
                 <dd className="text-[--color-on-primary-muted] text-sm sm:text-base font-medium">{stat.label}</dd>
