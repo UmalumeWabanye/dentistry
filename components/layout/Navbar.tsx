@@ -146,7 +146,7 @@ export function Navbar() {
               <Phone className="h-4 w-4" aria-hidden="true" />
               <span>{CLINIC_INFO.contact.phone}</span>
             </a>
-            <Button href="/appointments" size="sm" variant={scrolled || !isHome ? "primary" : "white"}>
+            <Button href="/appointments" size="md" variant="primary">
               Book Appointment
             </Button>
           </div>

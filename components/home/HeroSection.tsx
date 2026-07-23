@@ -20,7 +20,7 @@ export function HeroSection() {
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-[--color-text-muted] sm:text-lg">
               Comprehensive family, cosmetic, and restorative dentistry in a calm clinical setting with clear guidance at every step.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button href="/appointments" size="lg" icon={<Calendar className="h-5 w-5" aria-hidden="true" />}>
                 Book Today
               </Button>

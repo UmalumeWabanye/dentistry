@@ -22,7 +22,7 @@ interface ButtonProps {
 
 const variants = {
   primary:
-    "bg-[--color-primary] text-[--color-on-primary] hover:bg-[--color-primary-light] shadow-[var(--shadow-primary)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5",
+    "bg-[--color-primary] text-[--color-on-primary] hover:bg-[--color-primary-light] hover:font-bold shadow-[var(--shadow-primary)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5",
   secondary:
     "bg-[--color-accent] text-[--color-text] hover:bg-[--color-accent-dark] shadow-[var(--shadow-accent)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5",
   outline:
